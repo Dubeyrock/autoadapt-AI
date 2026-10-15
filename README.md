@@ -205,3 +205,12 @@ See [WRITEUP.md](WRITEUP.md) for experimental results, analysis, limitations, an
 - [x] One-command pipeline
 - [ ] Fresh-environment run verified
 - [x] WRITEUP.md"# autoadapt-AI" 
+
+
+
+
+## architecture diagram 
+
+
+<img width="1099" height="1600" alt="image" src="https://github.com/user-attachments/assets/567f1314-64b4-47ba-8f07-05a75c78c8df" />
+
