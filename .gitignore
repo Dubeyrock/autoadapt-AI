@@ -1,0 +1,10 @@
+# Local Python environment and generated caches
+venv/
+.venv/
+cache/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local secrets
+.streamlit/secrets.toml

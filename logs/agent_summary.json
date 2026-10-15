@@ -1,0 +1,55 @@
+{
+  "stop_reason": "plateau",
+  "n_trials": 13,
+  "elapsed_sec": 12.39,
+  "selected": {
+    "action": "hybrid_C10",
+    "n_labels": 100,
+    "f1_mean": 0.9202171970919654,
+    "f1_ci": [
+      0.8955059992326289,
+      0.9449283949513019
+    ],
+    "train_sec": 0.050499779999881866
+  },
+  "top_mean": {
+    "action": "hybrid_C10",
+    "n_labels": 200,
+    "f1_mean": 0.9354685852964172,
+    "f1_ci": [
+      0.9251593145960768,
+      0.9457778559967576
+    ],
+    "train_sec": 0.10026682000025175
+  },
+  "indistinguishable_from_top": [
+    "hybrid_C10@100",
+    "hybrid_C10@200"
+  ],
+  "banned": {
+    "warmstart_gentle": "src_drop 0.143 > 0.03",
+    "warmstart_strong": "src_drop 0.307 > 0.03"
+  },
+  "frozen": [
+    "hybrid_C10",
+    "mlp"
+  ],
+  "finalists": [
+    "hybrid_C10",
+    "mlp"
+  ],
+  "challengers": [
+    "logreg_C100",
+    "svm_C1",
+    "logreg_C10",
+    "logreg_C1"
+  ],
+  "config": {
+    "max_trials": 20,
+    "max_seconds": 600.0,
+    "patience": 3,
+    "min_gain_per_label": 0.0002,
+    "guardrail_max_drop": 0.03
+  },
+  "note": "Selection used validation data only. Test set not touched."
+}

@@ -92,8 +92,22 @@ DATA LAYER  ->  ENCODER + EMBEDDING CACHE  ->  ADAPTATION ACTIONS
 | SMS Spam Collection | UCI ML Repository | Source domain |
 | YouTube Spam Collection | UCI ML Repository | Target domain |
 
-Raw files live in `data/` (see `data/readme` for the original description and
-license; please verify license terms there before redistributing).
+Raw datasets are not included in this GitHub repository because redistribution
+permissions have not been verified for every source file. Obtain the SMS Spam
+Collection and the five YouTube Spam Collection CSVs from their official sources,
+review their terms, and place them in `data/` with these exact filenames:
+
+```text
+data/SMSSpamCollection
+data/Youtube01-Psy.csv
+data/Youtube02-KatyPerry.csv
+data/Youtube03-LMFAO.csv
+data/Youtube04-Eminem.csv
+data/Youtube05-Shakira.csv
+```
+
+The local `data/readme` documents the SMS collection's attribution and usage
+terms. Do not redistribute datasets unless their applicable terms allow it.
 
 Splits (seed 42, stratified):
 - SMS: 70 / 15 / 15 train / val / test

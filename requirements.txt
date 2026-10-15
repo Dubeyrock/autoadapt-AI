@@ -1,0 +1,19 @@
+# Core
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.10
+
+# Pretrained encoder (PyTorch isi ke saath install hota hai)
+sentence-transformers>=2.7
+
+# Plots
+matplotlib>=3.7
+
+# Demo dashboard
+streamlit>=1.35
+
+# Tests
+pytest>=7.4
+
+

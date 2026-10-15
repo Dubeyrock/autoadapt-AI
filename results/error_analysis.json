@@ -1,0 +1,158 @@
+{
+  "n_labels": 100,
+  "models": {
+    "hybrid_C10 (selected)": {
+      "macro_f1": 0.9202171970919654,
+      "confusion_matrix": [
+        [
+          507,
+          13
+        ],
+        [
+          66,
+          414
+        ]
+      ]
+    },
+    "logreg_C10 (MiniLM only)": {
+      "macro_f1": 0.8853908927943864,
+      "confusion_matrix": [
+        [
+          500,
+          20
+        ],
+        [
+          93,
+          387
+        ]
+      ]
+    },
+    "tfidf": {
+      "macro_f1": 0.9215919731334903,
+      "confusion_matrix": [
+        [
+          497,
+          23
+        ],
+        [
+          55,
+          425
+        ]
+      ]
+    }
+  },
+  "h1": {
+    "spam WITH cue": {
+      "n": 79,
+      "recall": {
+        "hybrid_C10 (selected)": 0.9367088607594937,
+        "logreg_C10 (MiniLM only)": 0.8835443037974684,
+        "tfidf": 0.9544303797468354
+      }
+    },
+    "spam WITHOUT cue": {
+      "n": 17,
+      "recall": {
+        "hybrid_C10 (selected)": 0.5176470588235295,
+        "logreg_C10 (MiniLM only)": 0.4470588235294116,
+        "tfidf": 0.5647058823529412
+      }
+    }
+  },
+  "hardest": [
+    {
+      "text": "give it a like\ufeff",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 1.0
+      }
+    },
+    {
+      "text": "Watch Maroon 5's latest 2nd single from V (It Was Always You) www.youtube. com/watch?v=TQ0",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 0.0
+      }
+    },
+    {
+      "text": "HOW MANY THUMBS UP FOR LOUIS SAVING THE DAY!?!?\ufeff",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 1.0
+      }
+    },
+    {
+      "text": "Check out this video on YouTube:<br />Gotta dance and just have a blast every time I hear ",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 0.6
+      }
+    },
+    {
+      "text": "This guy win dollars sleeping... m m m he loves the planet its full of RETARDS",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 0.8,
+        "tfidf": 1.0
+      }
+    },
+    {
+      "text": "Finally someone shares the same opinion as me. I&#39;ve tried really hard to like Gangnam ",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 1.0
+      }
+    },
+    {
+      "text": "share your thoughts\ufeff",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 1.0,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 0.6
+      }
+    },
+    {
+      "text": "katy is beautiful. and this song is catchy. I'm a rapper with 25000 subscribers.. thumbs u",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 0.8,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 1.0
+      }
+    },
+    {
+      "text": "this song gives me strength! love her lyrics. this video really brings the lyrics to life.",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 0.8,
+        "logreg_C10 (MiniLM only)": 0.8,
+        "tfidf": 1.0
+      }
+    },
+    {
+      "text": "Thumbs up if FE-FE-FE-FE-FEGELEIN brought u here\ufeff",
+      "true": 1,
+      "err_rate": {
+        "hybrid_C10 (selected)": 0.8,
+        "logreg_C10 (MiniLM only)": 1.0,
+        "tfidf": 0.0
+      }
+    }
+  ],
+  "consistent_errors": {
+    "selected": 14,
+    "shared_with_tfidf": 11
+  }
+}
